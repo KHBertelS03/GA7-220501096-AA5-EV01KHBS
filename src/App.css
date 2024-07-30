@@ -1,0 +1,100 @@
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('https://wallpapercave.com/wp/wp2760959.gif');
+  background-size: cover;
+  background-position: center center;  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.divkei {
+  padding: 10%;
+  border: 4px dotted;
+  animation: neonBorder 5s linear infinite;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes neonBorder {
+  0% {
+      border-color: #ff00de;
+      box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+  }
+
+  33% {
+      border-color: #00ffff;
+      box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+
+  66% {
+      border-color: #00ff00;
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+
+  100% {
+      border-color: #ff00de;
+      box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+  }
+}
+
+
+
+input, button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Specific Styles for Conversor */
+#textoAVoz {
+  margin-bottom: 10px;
+}
+
+#usuario, #clave {
+  margin-bottom: 10px;
+}
+
+p {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}

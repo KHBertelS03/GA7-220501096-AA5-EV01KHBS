@@ -1,0 +1,114 @@
+ body { 
+     /* Fondo oscuro para resaltar los elementos neón */
+     font-family: 'Roboto', sans-serif; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+ .container {
+     background-color: #1a1a1a;
+     border-radius: 15px;
+     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2), 0 0 30px rgba(0, 255, 255, 0.2);
+     padding: 20px;
+     text-align: center;
+     max-width: 400px;
+     width: 100%;
+     position: relative;
+     z-index: 1;
+ }
+
+
+ .divkei {
+     padding: 10%;
+     border: 4px dotted;
+     animation: neonBorder 5s linear infinite;
+     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+ }
+
+ @keyframes neonBorder {
+     0% {
+         border-color: #ff00de;
+         box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+     }
+
+     33% {
+         border-color: #00ffff;
+         box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+     }
+
+     66% {
+         border-color: #00ff00;
+         box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+     }
+
+     100% {
+         border-color: #ff00de;
+         box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de;
+     }
+ }
+
+
+ .container::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -5%;
+     width: 110%;
+     height: 100%;
+     background: linear-gradient(45deg, rgba(0, 255, 255, 0.2), rgba(255, 0, 255, 0.2));
+     filter: blur(10px);
+     z-index: -1;
+ }
+
+ h3 {
+     color: #ff9900;
+     margin-bottom: 20px;
+     text-shadow: 0 0 5px rgba(95, 194, 15, 0.7); 
+     text-align: center;
+ }
+
+ input {
+     background-color: #333;
+     border: none;
+     border-bottom: 2px solid #00ffcc;
+     border-radius: 5px;
+     color: #00ffcc;
+     font-size: 16px;
+     margin-bottom: 20px;
+     padding: 10px;
+     outline: none;
+     width: 100%;
+     box-sizing: border-box;
+ }
+
+ input::placeholder {
+     color: #888;
+ }
+
+ button {
+     background: #00ffcc;
+     border: none;
+     border-radius: 5px;
+     box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+     color: #fffcfc;
+     cursor: pointer;
+     font-size: 18px;
+     padding: 10px 20px;
+     text-transform: uppercase;
+     transition: all 0.3s ease;
+ }
+
+ button:hover {
+     box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+     background: #00e6b8;
+ }
+
+ p {
+     font-style: italic;
+     color: #00ffcc;
+     margin-top: 20px;
+     text-shadow: 0 0 5px rgba(0, 255, 255, 0.7);
+ }
